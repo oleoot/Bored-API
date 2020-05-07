@@ -7,10 +7,14 @@ async function getActivity() {
     const response = await fetch(api_url);
     const data = await response.json();
     console.log(data);
-    const { activity, accesability, type, participants } = data;
-    let container = document.createElement('div');
-    let nameElement = document.createElement('h1');
+    const { activity, accessibility, type, participants } = data;
+    let nameElement = document.querySelector('#name');
+    let accessibilityElement = document.querySelector('#accessibility');
+    let typeElement = document.querySelector('#type');
+    let participantsElement = document.querySelector('#participants');
     nameElement.innerText = activity;
-    container.append(nameElement);
-    wrapper.append(container);
+    accessibilityElement.innerText = accessibility;
+    typeElement.innerText = type;
+    participantsElement.innerText = participants;
+    wrapper.append(nameElement, typeElement, participantsElement, accessibilityElement);
 }
