@@ -13,8 +13,8 @@ async function getActivity() {
     let typeElement = document.querySelector('#type');
     let participantsElement = document.querySelector('#participants');
     nameElement.innerText = activity;
-    accessibilityElement.innerText = accessibility;
-    typeElement.innerText = type;
-    participantsElement.innerText = participants;
+    accessibilityElement.innerText = 'Accessibility: ' + accessibility;
+    typeElement.innerText = 'Type: ' + type;
+    participantsElement.innerText = 'Participants: ' + participants;
     wrapper.append(nameElement, typeElement, participantsElement, accessibilityElement);
 }

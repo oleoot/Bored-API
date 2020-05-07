@@ -9,10 +9,30 @@ body{
  justify-content: center;
  align-items: center;
  flex-direction: column;
+ background: linear-gradient(#a1c4fd, #c2e9fb);
+ font-family: 'Poppins', sans-serif;
+}
+h2{
+font-size: 50px;
+color: #fff;
+margin-bottom: 40px;
 }
 p{
 font-size: 40px;
 color: #fff;
 text-align: center;
-margin-bottom: 20px;
+margin-bottom: 30px;
+}
+#btn{
+padding: 30px 20px;
+border-radius: 30px;
+background: #C8BDFE;
+outline: none;
+border: none;
+font-size: 30px;
+display: block;
+margin: 0 auto;
+color: #fff;
+text-transform: uppercase;
+font-weight: 700;
 }
